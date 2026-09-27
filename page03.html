@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Monomaniac+One&display=swap" rel="stylesheet">
+    <!-- TailwindCSS ด้วยวิธี CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- ตั้งค่า Google Font และสี ใช้กับ TailwindCSS -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        monomaniac: ["Monomaniac One", "sans-serif"],
+                    },
+                    colors: {
+                        navy: "rgb(0, 12, 88)",
+                        darknavy: "rgb(6, 1, 53)",
+                        sky: "rgb(122, 153, 233)",
+                        skyborder: "rgb(108, 138, 212)",
+                        softtext: "rgb(190, 200, 235)",
+                        whitesmoke: "rgb(245, 245, 245)",
+                        dark: "rgb(34, 34, 34)",
+                        inputbg: "rgb(10, 0, 50)",
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class="bg-navy m-0 text-whitesmoke font-monomaniac leading-[normal]">
+    <!-- ส่วนที่ 1 -->
+    <div class="container1">
+        <!-- ส่วนของ navbar -->
+        <div class="flex justify-between m-0 bg-darknavy p-5">
+            <div class="text-[20px]">
+                <span>BUSAKOL WATRONCHAI</span>
+            </div>
+            <div class="flex gap-5">
+                <a href="" class="text-whitesmoke text-[20px] no-underline hover:text-sky">Work</a>
+                <a href="" class="text-whitesmoke text-[20px] no-underline hover:text-sky">About</a>
+                <a href="" class="text-whitesmoke text-[20px] no-underline hover:text-sky">Contact</a>
+            </div>
+
+        </div>
+        <!-- ส่วนของ hero -->
+        <div class="flex justify-between my-5 mx-[100px] py-[25px] px-[100px] rounded-b-[20px]">
+            <div class="flex flex-col gap-5">
+                <span class="text-whitesmoke font-bold text-[80px]">HI, I AM <br>BUSAKOL W.</span>
+                <span class="text-whitesmoke text-[20px]">นักพัฒนาเว็บไซต์ฝั่งฟรอนท์เอนด์จากประเทศไทย
+                    <br>ที่มีความหลงไหลในการสร้างเว็บไซต์ที่เข้าถึงได้และเป็นมิตรกับผู้ใช้</span><br>
+                <!-- ปุ่ม + ไอคอน -->
+                <div class="flex items-center gap-5">
+                    <button class="flex items-center justify-between min-w-[200px] gap-[15px] whitespace-nowrap bg-sky text-whitesmoke
+                                   py-5 px-[25px] border-2 border-skyborder font-bold rounded-[50px] text-[16px]
+                                   hover:bg-whitesmoke hover:border-whitesmoke hover:text-sky cursor-pointer">CONTACT ME <span>•</span></button>
+                    <a href=""><i class="bi bi-linkedin flex w-12 h-12 bg-dark text-sky rounded-full text-[20px] items-center justify-center hover:bg-sky hover:text-dark"></i></a>
+                    <a href=""><i class="bi bi-github flex w-12 h-12 bg-dark text-sky rounded-full text-[20px] items-center justify-center hover:bg-sky hover:text-dark"></i></a>
+                </div>
+            </div>
+
+            <div class="shrink-0">
+                <img class="w-[500px] h-[500px] max-w-none object-cover rounded-[5%]" src="./images/person1.jpg" alt="">
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ส่วนที่ 2 -->
+    <div class="container2">
+    </div>
+    <div class="flex flex-col gap-10 my-5 mx-[100px] py-[25px] px-[100px] border-t border-sky/40 rounded-b-[20px]">
+        <div class="flex gap-[100px]">
+            <div class="shrink-0">
+                <span class="font-bold text-[80px]">ABOUT ME</span>
+            </div>
+
+            <div class="flex flex-col gap-[25px] max-w-[600px]">
+                <span
+                    class="text-[30px] leading-[1.5]">ผมเป็นนักพัฒนาเว็บไซต์ฝั่งฟรอนท์เอนด์ที่ทำงาน<br>อยู่ในกรุงเทพฯกำลังมองหาโอกาสที่น่าตื่นเต้น<br>ในการ
+                    ทำงานที่มีพื้นฐานการศึกษาด้าน<br>วิศวกรรมซอฟต์แวร์</span>
+                <div>
+                    <p class="m-0 text-[16px] leading-[1.8] text-softtext">ชอบให้ความสำคัญกับการเขาถึง (accessibility) เมื่อพัฒนาเว็บไซต์ <br>มีความกระตือรือร้นและอยากรู้
+                        อยากเห็นเกี่ยวกับการแก้ปัญหาต่างๆ<br>ปัจจุบันกำลังศึกษาเรียนรู้เกี่ยวกับ React.js
+                        และการออกแบบ<br>เว็บไซต์เล็กน้อยเมื่อไม่ได้เขียนโปรแกรม ดิฉัน/ผมชอบเล่นฟุตบอล ถ่ายภาพ
+                        และเล่นเกม<br>FIFA, Diablo กำลังเรียนรู้เพิ่มเติมเพื่อพัฒนาทักษะอยู่เสมอ</p>
+                </div>
+                <!-- ปุ่ม + ไอคอน -->
+                <div class="flex items-center gap-5">
+                    <button class="flex items-center justify-between min-w-[200px] gap-[15px] whitespace-nowrap bg-sky text-whitesmoke
+                                   py-5 px-[25px] border-2 border-skyborder font-bold rounded-[50px] text-[16px]
+                                   hover:bg-whitesmoke hover:border-whitesmoke hover:text-sky cursor-pointer">DOWNLOAD RESUME <span>•</span></button>
+                    <a href=""><i class="bi bi-linkedin flex w-12 h-12 bg-dark text-sky rounded-full text-[20px] items-center justify-center hover:bg-sky hover:text-dark"></i></a>
+                    <a href=""><i class="bi bi-github flex w-12 h-12 bg-dark text-sky rounded-full text-[20px] items-center justify-center hover:bg-sky hover:text-dark"></i></a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <img class="w-full h-[450px] object-cover rounded-[20px]" src="./images/person2.jpg" alt="">
+        </div>
+
+    </div>
+
+    <!-- ส่วนที่ 3 -->
+    <div class="flex gap-[100px] my-5 mx-[100px] py-[50px] px-[100px] border-t border-sky/40">
+        <div class="shrink-0 w-[400px] font-bold text-[60px]">
+            <span>MY CAPABILITIES</span>
+        </div>
+
+        <div class="flex flex-col gap-10">
+            <p class="m-0 text-[16px] leading-[1.8] text-softtext">ผมมองหาโอกาสในการเพิ่มทักษะใหม่ๆ อยู่เสมอ ทั้งการพัฒนาฟรอนท์เอนด์ แบ็คเอนด์
+                การออกแบบ UX/UI ฐานข้อมูล</p>
+
+            <div class="flex flex-wrap gap-[15px]">
+                <span class="py-3 px-[30px] border border-whitesmoke rounded-[50px] text-[16px] hover:bg-sky hover:text-darknavy cursor-pointer">HTML</span>
+                <span class="py-3 px-[30px] border border-whitesmoke rounded-[50px] text-[16px] hover:bg-sky hover:text-darknavy cursor-pointer">CSS</span>
+                <span class="py-3 px-[30px] border border-whitesmoke rounded-[50px] text-[16px] hover:bg-sky hover:text-darknavy cursor-pointer">JAVASCRIPT</span>
+                <span class="py-3 px-[30px] border border-whitesmoke rounded-[50px] text-[16px] hover:bg-sky hover:text-darknavy cursor-pointer">FLUTTER</span>
+                <span class="py-3 px-[30px] border border-whitesmoke rounded-[50px] text-[16px] hover:bg-sky hover:text-darknavy cursor-pointer">DART</span>
+                <span class="py-3 px-[30px] border border-whitesmoke rounded-[50px] text-[16px] hover:bg-sky hover:text-darknavy cursor-pointer">IoT</span>
+                <span class="py-3 px-[30px] border border-whitesmoke rounded-[50px] text-[16px] hover:bg-sky hover:text-darknavy cursor-pointer">REACT</span>
+                <span class="py-3 px-[30px] border border-whitesmoke rounded-[50px] text-[16px] hover:bg-sky hover:text-darknavy cursor-pointer">DATABASE</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ส่วนที่ 4 -->
+    <div class="flex gap-[100px] my-5 mx-[100px] py-[50px] px-[100px] border-t border-sky/40">
+        <div class="shrink-0 w-[400px] font-bold text-[60px]">
+            <span>MY EXPERIENCE</span>
+        </div>
+
+        <div class="flex flex-col gap-10">
+            <div>
+                <div class="flex justify-between items-center gap-5 mb-[15px]">
+                    <span class="text-[24px]">Freelance Developer</span>
+                    <span class="text-[16px] text-softtext">Nov 2023 — Present</span>
+                </div>
+                <p class="m-0 text-[16px] leading-[1.8] text-softtext">พัฒนาและปรับปรุงส่วนติดต่อผู้ใช้สำหรับเว็บแอปพลิเคชันโดยใช้ React.js ทำงานร่วมกับทีมออกแบบ UX/UI
+                    เพื่อสร้างประสบการณ์ผู้ใช้ที่น่าประทับใจ
+                    ปรับปรุงความเร็วในการโหลดเว็บไซต์ด้วยเทคนิคการเพิ่มประสิทธิภาพต่างๆ
+                    ร่วมพัฒนาและดูแลโลบรารีคอมโพเนนต์ภายในองค์กร</p>
+            </div>
+
+            <div>
+                <div class="flex justify-between items-center gap-5 mb-[15px]">
+                    <span class="text-[24px]">Front-End Intern</span>
+                    <span class="text-[16px] text-softtext">Sep 2023 — Nov 2023</span>
+                </div>
+                <p class="m-0 text-[16px] leading-[1.8] text-softtext">พัฒนาเว็บไซต์ลูกค้าโดยใช้ HTML, CSS และ JavaScript<br>
+                    ช่วยปรับปรุงการเข้าถึง (Accessibility) ของเว็บไซต์ให้สอดคล้องกับมาตรฐาน WCAG<br>
+                    ทำงานร่วมกับทีมแบ็คเอนด์เพื่อเชื่อมต่อ API</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ส่วนที่ 5 -->
+    <div class="flex gap-[100px] my-5 mx-[100px] py-[50px] px-[100px] border-t border-sky/40">
+        <div class="flex flex-col gap-[15px] shrink-0 w-[400px]">
+            <div class="shrink-0 w-[400px] font-bold text-[60px]">
+                <span>LET'S CONNECT</span>
+            </div>
+            <span class="text-[16px] text-softtext">Say hello at <a href="mailto:busakol@sau.ac.th" class="text-whitesmoke text-[16px] no-underline hover:text-sky">busakol@sau.ac.th</a></span>
+            <span class="text-[16px] text-softtext">For more info, here's my <a href="" class="text-whitesmoke text-[16px] no-underline hover:text-sky">resume</a></span>
+
+            <div class="flex gap-5 mt-[15px]">
+                <a href=""><i class="bi bi-linkedin text-sky text-[24px] hover:text-whitesmoke"></i></a>
+                <a href=""><i class="bi bi-github text-sky text-[24px] hover:text-whitesmoke"></i></a>
+                <a href=""><i class="bi bi-twitter-x text-sky text-[24px] hover:text-whitesmoke"></i></a>
+                <a href=""><i class="bi bi-instagram text-sky text-[24px] hover:text-whitesmoke"></i></a>
+            </div>
+        </div>
+
+        <!-- ฟอร์มติดต่อ -->
+        <form class="flex flex-col gap-5 w-full">
+            <div class="flex flex-col gap-2.5">
+                <label for="name-input" class="text-[16px]">Name</label>
+                <input type="text" id="name-input" class="bg-inputbg border-none rounded-[5px] p-[15px] text-whitesmoke text-[16px] font-monomaniac
+                                                          focus:outline focus:outline-2 focus:outline-sky">
+            </div>
+
+            <div class="flex flex-col gap-2.5">
+                <label for="email" class="text-[16px]">Email</label>
+                <input type="email" id="email" class="bg-inputbg border-none rounded-[5px] p-[15px] text-whitesmoke text-[16px] font-monomaniac
+                                                      focus:outline focus:outline-2 focus:outline-sky">
+            </div>
+
+            <div class="flex flex-col gap-2.5">
+                <label for="subject" class="text-[16px]">Subject</label>
+                <input type="text" id="subject" class="bg-inputbg border-none rounded-[5px] p-[15px] text-whitesmoke text-[16px] font-monomaniac
+                                                       focus:outline focus:outline-2 focus:outline-sky">
+            </div>
+
+            <div class="flex flex-col gap-2.5">
+                <label for="message" class="text-[16px]">Message</label>
+                <textarea id="message" class="h-[120px] resize-y bg-inputbg border-none rounded-[5px] p-[15px] text-whitesmoke text-[16px] font-monomaniac
+                                              focus:outline focus:outline-2 focus:outline-sky"></textarea>
+            </div>
+
+            <button type="submit" class="flex items-center justify-center self-start min-w-[150px] gap-[15px] whitespace-nowrap bg-sky text-darknavy
+                                         py-[18px] px-[25px] border-2 border-skyborder font-bold rounded-[50px] text-[16px]
+                                         hover:bg-whitesmoke hover:border-whitesmoke hover:text-sky cursor-pointer">SUBMIT</button>
+        </form>
+    </div>
+
+    <!-- ส่วนของ footer -->
+    <div class="mx-[100px] p-[25px] border-t border-sky/40 text-center text-[16px]">
+        <span>© 2025 Created by SAU-Dev-Team</span>
+    </div>
+
+</body>
+
+</html>

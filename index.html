@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <!-- TailwindCSS ด้วยวิธี CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- ตั้งค่า Google Font ใช้กับ TailwindCSS -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        robotomono: ["Roboto Mono", "monospace"],
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class="m-0 p-0 bg-[#91ffb2] font-robotomono leading-[normal]">
+    <!-- ส่วน main -->
+    <div class="flex justify-center gap-[50px] my-[80px] mx-[150px]">
+        <!-- sec-left -->
+        <div>
+            <span class="block text-[5.5rem] font-bold">My Web Design by</span>
+            <span class="block text-[5.5rem] font-bold">HTML+React+TailwindCSS</span>
+            <p class="w-[550px] text-[1.2rem] mb-[40px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum repudiandae, debitis rerum ut id amet
+                maiores voluptatem tenetur magnam saepe.</p>
+            <button class="bg-[#333333] text-white py-[15px] px-10 rounded-full border-2 border-black cursor-pointer hover:bg-[#111111]">Follow Me</button>
+            <div class="flex justify-between mt-10">
+                <a href="./page01.html">
+                <img class="w-[500px]" src="./images/pic1.png" alt="pic1">
+                </a>
+                <a href="./page02.html">
+                <img class="w-[500px]" src="./images/pic2.png" alt="pic2">
+                </a>
+            </div>
+        </div>
+
+        <!-- sec-center -->
+        <div>
+            <a href="./page03.html">
+            <img class="h-[755px] max-w-none" src="./images/pic3.png" alt="pic3">
+            </a>
+        </div>
+
+        <!-- sec-right -->
+        <div>
+            <a href="./page04.html">
+            <img class="h-[755px] max-w-none" src="./images/pic4.png" alt="pic4">
+            </a>
+        </div>
+
+
+    </div>
+
+    <!-- ส่วน footer -->
+    <div class="flex flex-col items-center text-[1.2rem] mb-[50px]">
+        <span>Create by Busakol SAU</span>
+        <span>Copyring © 2526 WOW WOW WOW</span>
+    </div>
+</body>
+
+</html>

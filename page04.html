@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sansita+Swashed:wght@300..900&display=swap"
+        rel="stylesheet">
+    <!-- TailwindCSS ด้วยวิธี CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- ตั้งค่า Google Font และสี ใช้กับ TailwindCSS -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        poppins: ["Poppins", "sans-serif"],
+                        sansita: ["Sansita Swashed", "sans-serif"],
+                    },
+                    colors: {
+                        dark: "rgb(34, 34, 34)",
+                        brick: "rgb(176, 82, 42)",
+                        brickdark: "rgb(140, 60, 28)",
+                        caramel: "rgb(205, 128, 72)",
+                        bgdark: "rgb(20, 20, 20)",
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class="m-0 bg-white text-dark font-poppins leading-[normal]">
+    <!-- ส่วนที่ 1 -->
+    <div class="relative h-[650px] bg-bgdark overflow-hidden">
+        <img class="absolute top-0 right-0 w-full h-full object-cover -scale-x-100" src="./images/image1.png" alt="">
+        <!-- ส่วนของ navbar -->
+        <div class="relative flex items-center justify-between py-5 px-[100px]">
+            <img class="w-[110px]" src="./images/modrino.png" alt="Keithston Logo">
+            <div class="flex gap-[30px] text-[14px]">
+                <a href="#" class="text-white no-underline hover:text-caramel">Home</a>
+                <a href="#" class="text-white no-underline hover:text-caramel">Blog</a>
+                <a href="#" class="text-white no-underline hover:text-caramel">Contact Us</a>
+                <a href="#" class="text-white no-underline hover:text-caramel">Services</a>
+            </div>
+            <div class="flex gap-5">
+                <a href="#" class="text-white no-underline hover:text-caramel"><i class="bi bi-search text-[20px]"></i></a>
+                <a href="#" class="text-white no-underline hover:text-caramel"><i class="bi bi-cart3 text-[20px]"></i></a>
+            </div>
+        </div>
+
+        <!-- ข้อความ hero -->
+        <div class="relative flex flex-col gap-[15px] m-[100px] text-white">
+            <span class="text-[18px] text-caramel">Delicious Cafe</span>
+            <h1 class="m-0 text-[70px] font-medium italic leading-[1.2] font-sansita">Sweet Treats,<br>Perfect Eats</h1>
+            <div class="flex items-center gap-[30px] mt-5">
+                <button class="bg-brick text-white py-3 px-7 border-none rounded-[5px] text-[14px] font-poppins cursor-pointer hover:bg-brickdark">Shop Now</button>
+                <a href="#" class="text-white text-[14px] no-underline hover:text-caramel">Learn More</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ส่วนที่ 2 -->
+    <div class="py-20 px-[150px]">
+        <span class="block text-center text-[45px] italic font-sansita mb-[50px]">Top Products</span>
+
+        <div class="flex flex-wrap justify-center gap-[30px]">
+            <!-- สินค้าที่ 1 -->
+            <div class="flex flex-col justify-end w-[360px] h-[411px] p-[25px] bg-[rgb(28,28,28)] bg-[url('./images/image1.png')]
+                        bg-[length:350%] bg-[position:right_center] rounded-lg text-white box-border">
+                <img class="w-full h-[220px] object-contain mb-auto" src="./images/b1.png" alt="">
+                <div class="flex justify-between items-center mt-[15px]">
+                    <span class="text-[16px] font-semibold">40 Baht</span>
+                    <i class="bi bi-info-circle text-[18px] cursor-pointer hover:text-caramel"></i>
+                </div>
+                <div class="flex justify-between items-center mt-2.5">
+                    <span class="text-[16px] leading-[1.4]">Whole Grain<br>Bread</span>
+                    <button class="bg-brick text-white py-2 px-5 border-none rounded-[5px] text-[12px] font-poppins cursor-pointer hover:bg-brickdark">Add</button>
+                </div>
+            </div>
+
+            <!-- สินค้าที่ 2 -->
+            <div class="flex flex-col justify-end w-[360px] h-[411px] p-[25px] bg-[rgb(28,28,28)] bg-[url('./images/image1.png')]
+                        bg-[length:350%] bg-[position:right_center] rounded-lg text-white box-border">
+                <img class="w-full h-[220px] object-contain mb-auto" src="./images/b2.png" alt="">
+                <div class="flex justify-between items-center mt-[15px]">
+                    <span class="text-[16px] font-semibold">40 Baht</span>
+                    <i class="bi bi-info-circle text-[18px] cursor-pointer hover:text-caramel"></i>
+                </div>
+                <div class="flex justify-between items-center mt-2.5">
+                    <span class="text-[16px] leading-[1.4]">Whole Grain<br>Bread</span>
+                    <button class="bg-brick text-white py-2 px-5 border-none rounded-[5px] text-[12px] font-poppins cursor-pointer hover:bg-brickdark">Add</button>
+                </div>
+            </div>
+
+            <!-- สินค้าที่ 3 -->
+            <div class="flex flex-col justify-end w-[360px] h-[411px] p-[25px] bg-[rgb(28,28,28)] bg-[url('./images/image1.png')]
+                        bg-[length:350%] bg-[position:right_center] rounded-lg text-white box-border">
+                <img class="w-full h-[220px] object-contain mb-auto" src="./images/b3.png" alt="">
+                <div class="flex justify-between items-center mt-[15px]">
+                    <span class="text-[16px] font-semibold">40 Baht</span>
+                    <i class="bi bi-info-circle text-[18px] cursor-pointer hover:text-caramel"></i>
+                </div>
+                <div class="flex justify-between items-center mt-2.5">
+                    <span class="text-[16px] leading-[1.4]">Whole Grain<br>Bread</span>
+                    <button class="bg-brick text-white py-2 px-5 border-none rounded-[5px] text-[12px] font-poppins cursor-pointer hover:bg-brickdark">Add</button>
+                </div>
+            </div>
+
+            <!-- สินค้าที่ 4 -->
+            <div class="flex flex-col justify-end w-[360px] h-[411px] p-[25px] bg-[rgb(28,28,28)] bg-[url('./images/image1.png')]
+                        bg-[length:350%] bg-[position:right_center] rounded-lg text-white box-border">
+                <img class="w-full h-[220px] object-contain mb-auto" src="./images/b4.png" alt="">
+                <div class="flex justify-between items-center mt-[15px]">
+                    <span class="text-[16px] font-semibold">40 Baht</span>
+                    <i class="bi bi-info-circle text-[18px] cursor-pointer hover:text-caramel"></i>
+                </div>
+                <div class="flex justify-between items-center mt-2.5">
+                    <span class="text-[16px] leading-[1.4]">Whole Grain<br>Bread</span>
+                    <button class="bg-brick text-white py-2 px-5 border-none rounded-[5px] text-[12px] font-poppins cursor-pointer hover:bg-brickdark">Add</button>
+                </div>
+            </div>
+
+            <!-- สินค้าที่ 5 -->
+            <div class="flex flex-col justify-end w-[360px] h-[411px] p-[25px] bg-[rgb(28,28,28)] bg-[url('./images/image1.png')]
+                        bg-[length:350%] bg-[position:right_center] rounded-lg text-white box-border">
+                <img class="w-full h-[220px] object-contain mb-auto" src="./images/b5.png" alt="">
+                <div class="flex justify-between items-center mt-[15px]">
+                    <span class="text-[16px] font-semibold">40 Baht</span>
+                    <i class="bi bi-info-circle text-[18px] cursor-pointer hover:text-caramel"></i>
+                </div>
+                <div class="flex justify-between items-center mt-2.5">
+                    <span class="text-[16px] leading-[1.4]">Whole Grain<br>Bread</span>
+                    <button class="bg-brick text-white py-2 px-5 border-none rounded-[5px] text-[12px] font-poppins cursor-pointer hover:bg-brickdark">Add</button>
+                </div>
+            </div>
+
+            <!-- สินค้าที่ 6 -->
+            <div class="flex flex-col justify-end w-[360px] h-[411px] p-[25px] bg-[rgb(28,28,28)] bg-[url('./images/image1.png')]
+                        bg-[length:350%] bg-[position:right_center] rounded-lg text-white box-border">
+                <img class="w-full h-[220px] object-contain mb-auto" src="./images/b6.png" alt="">
+                <div class="flex justify-between items-center mt-[15px]">
+                    <span class="text-[16px] font-semibold">40 Baht</span>
+                    <i class="bi bi-info-circle text-[18px] cursor-pointer hover:text-caramel"></i>
+                </div>
+                <div class="flex justify-between items-center mt-2.5">
+                    <span class="text-[16px] leading-[1.4]">Whole Grain<br>Bread</span>
+                    <button class="bg-brick text-white py-2 px-5 border-none rounded-[5px] text-[12px] font-poppins cursor-pointer hover:bg-brickdark">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ส่วนที่ 3 -->
+    <div class="relative flex justify-center items-center h-[240px] bg-[url('./images/image2.png')] bg-cover bg-center">
+        <div class="flex flex-col items-center gap-5 text-center">
+            <span class="text-[35px] italic text-brick leading-[1.2] font-sansita">20% Off Your<br>First Order</span>
+            <button class="bg-brick text-white py-3 px-7 border-none rounded-[5px] text-[14px] font-poppins cursor-pointer hover:bg-brickdark">Learn More</button>
+        </div>
+    </div>
+
+    <!-- ส่วนที่ 4 -->
+    <div class="py-20 px-[150px]">
+        <span class="block text-center text-[45px] italic font-sansita mb-5">Explore More</span>
+
+        <!-- เมนูหมวดหมู่ -->
+        <div class="flex justify-center gap-[30px] mb-10">
+            <a href="#" class="text-dark text-[14px] pb-[5px] no-underline border-b-2 border-brick">Cake</a>
+            <a href="#" class="text-[rgb(120,120,120)] text-[14px] pb-[5px] no-underline hover:text-dark hover:border-b-2 hover:border-brick">Muffins</a>
+            <a href="#" class="text-[rgb(120,120,120)] text-[14px] pb-[5px] no-underline hover:text-dark hover:border-b-2 hover:border-brick">Croissant</a>
+            <a href="#" class="text-[rgb(120,120,120)] text-[14px] pb-[5px] no-underline hover:text-dark hover:border-b-2 hover:border-brick">Bread</a>
+            <a href="#" class="text-[rgb(120,120,120)] text-[14px] pb-[5px] no-underline hover:text-dark hover:border-b-2 hover:border-brick">Tart</a>
+            <a href="#" class="text-[rgb(120,120,120)] text-[14px] pb-[5px] no-underline hover:text-dark hover:border-b-2 hover:border-brick">Favorite</a>
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-[25px]">
+            <img class="w-[310px] h-[230px] object-cover rounded-[5px] hover:scale-[1.03] cursor-pointer" src="./images/d1.png" alt="">
+            <img class="w-[310px] h-[230px] object-cover rounded-[5px] hover:scale-[1.03] cursor-pointer" src="./images/d2.png" alt="">
+            <img class="w-[310px] h-[230px] object-cover rounded-[5px] hover:scale-[1.03] cursor-pointer" src="./images/d3.png" alt="">
+            <img class="w-[310px] h-[230px] object-cover rounded-[5px] hover:scale-[1.03] cursor-pointer" src="./images/d4.png" alt="">
+            <img class="w-[310px] h-[230px] object-cover rounded-[5px] hover:scale-[1.03] cursor-pointer" src="./images/d5.png" alt="">
+            <img class="w-[310px] h-[230px] object-cover rounded-[5px] hover:scale-[1.03] cursor-pointer" src="./images/d6.png" alt="">
+        </div>
+    </div>
+
+    <!-- ส่วนที่ 5 -->
+    <div class="relative flex justify-center items-center h-[380px] bg-bgdark overflow-hidden">
+        <img class="absolute top-0 left-0 w-full h-full object-cover object-left opacity-50 -scale-x-100" src="./images/image1.png" alt="">
+        <div class="relative flex flex-col items-center gap-5 max-w-[450px] text-center text-white">
+            <span class="text-[40px] italic font-sansita">About us</span>
+            <p class="m-0 text-[14px] leading-[1.8] text-[rgb(220,220,220)]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum repudiandae, debitis rerum ut id amet
+                maiores voluptatem tenetur magnam saepe.</p>
+            <button class="bg-brick text-white py-3 px-7 border-none rounded-[5px] text-[14px] font-poppins cursor-pointer hover:bg-brickdark">Read More</button>
+        </div>
+    </div>
+
+    <!-- ส่วนที่ 6 -->
+    <div class="py-20 px-[150px]">
+        <span class="block text-center text-[45px] italic font-sansita mb-[50px]">Featured Treats</span>
+
+        <div class="flex justify-center gap-[30px]">
+            <div class="w-[250px]">
+                <img class="w-full h-[250px] object-cover rounded-[10px]" src="./images/d7.png" alt="">
+                <div class="flex justify-between mt-2.5 text-[16px] font-semibold">
+                    <span>Puff Pastry</span>
+                    <span class="text-brick">$ 5</span>
+                </div>
+            </div>
+
+            <div class="w-[250px]">
+                <img class="w-full h-[250px] object-cover rounded-[10px]" src="./images/d8.png" alt="">
+                <div class="flex justify-between mt-2.5 text-[16px] font-semibold">
+                    <span>Doughnuts</span>
+                    <span class="text-brick">$ 3</span>
+                </div>
+            </div>
+
+            <div class="w-[250px]">
+                <img class="w-full h-[250px] object-cover rounded-[10px]" src="./images/d9.png" alt="">
+                <div class="flex justify-between mt-2.5 text-[16px] font-semibold">
+                    <span>Brownies</span>
+                    <span class="text-brick">$ 4</span>
+                </div>
+            </div>
+
+            <div class="w-[250px]">
+                <img class="w-full h-[250px] object-cover rounded-[10px]" src="./images/d10.png" alt="">
+                <div class="flex justify-between mt-2.5 text-[16px] font-semibold">
+                    <span>Fruit Tart</span>
+                    <span class="text-brick">$ 6</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ส่วนที่ 7 -->
+    <div class="bg-bgdark text-white pt-[30px] px-[150px] pb-5">
+        <!-- โลโก้ + follow us -->
+        <div class="flex justify-between items-center pb-5 border-b border-white/20">
+            <img class="w-[110px]" src="./images/modrino.png" alt="Keithston Logo">
+            <div class="flex items-center gap-[15px] text-[14px]">
+                <span>Follow us</span>
+                <a href="#" class="text-white no-underline hover:text-caramel"><i class="bi bi-facebook flex w-8 h-8 border border-white rounded-full items-center justify-center text-[14px] hover:bg-brick hover:border-brick"></i></a>
+                <a href="#" class="text-white no-underline hover:text-caramel"><i class="bi bi-instagram flex w-8 h-8 border border-white rounded-full items-center justify-center text-[14px] hover:bg-brick hover:border-brick"></i></a>
+                <a href="#" class="text-white no-underline hover:text-caramel"><i class="bi bi-twitter-x flex w-8 h-8 border border-white rounded-full items-center justify-center text-[14px] hover:bg-brick hover:border-brick"></i></a>
+                <a href="#" class="text-white no-underline hover:text-caramel"><i class="bi bi-youtube flex w-8 h-8 border border-white rounded-full items-center justify-center text-[14px] hover:bg-brick hover:border-brick"></i></a>
+            </div>
+        </div>
+
+        <!-- ข้อมูล 3 คอลัมน์ -->
+        <div class="flex justify-between gap-[50px] py-[30px]">
+            <div class="flex flex-col gap-2.5 text-[14px] text-[rgb(200,200,200)]">
+                <span class="text-[20px] font-semibold text-white mb-2.5">About Us</span>
+                <span>(123) 456-7890</span>
+                <span>info@keithston.com</span>
+                <span>123 Phetkasem Road<br>Nongkham Bangkok 10160</span>
+            </div>
+
+            <div class="flex flex-col gap-2.5 text-[14px] text-[rgb(200,200,200)]">
+                <span class="text-[20px] font-semibold text-white mb-2.5">Explore</span>
+                <a href="#" class="text-[rgb(200,200,200)] no-underline">Home</a>
+                <a href="#" class="text-[rgb(200,200,200)] no-underline">Blog</a>
+                <a href="#" class="text-[rgb(200,200,200)] no-underline">Contact Us</a>
+                <a href="#" class="text-[rgb(200,200,200)] no-underline">Services</a>
+            </div>
+
+            <div class="flex flex-col gap-2.5 text-[14px] text-[rgb(200,200,200)]">
+                <span class="text-[20px] font-semibold text-white mb-2.5">Recent News</span>
+                <div class="flex items-center gap-[15px]">
+                    <img class="w-[70px] h-[55px] object-cover rounded-[5px]" src="./images/d11.png" alt="">
+                    <div class="flex flex-col gap-[5px]">
+                        <span class="text-[12px] text-caramel">Sep 27, 2026</span>
+                        <a href="#" class="text-[rgb(200,200,200)] no-underline">Puff pastry for<br>your breakfast</a>
+                    </div>
+                </div>
+                <div class="flex items-center gap-[15px]">
+                    <img class="w-[70px] h-[55px] object-cover rounded-[5px]" src="./images/d7.png" alt="">
+                    <div class="flex flex-col gap-[5px]">
+                        <span class="text-[12px] text-caramel">Sep 20, 2026</span>
+                        <a href="#" class="text-[rgb(200,200,200)] no-underline">Puff pastry for<br>your breakfast</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- copyright -->
+        <div class="text-center text-[12px] text-[rgb(160,160,160)] pt-5 border-t border-white/20">
+            <span>© 2026 Keithston Bakery. All rights reserved.</span>
+        </div>
+    </div>
+</body>
+
+</html>
